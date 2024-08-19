@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: yellow;
+}
+
+header {
+  background-color: red;
+  height: 40px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+img {
+  width: 50%;
+}
+p {
+  width: 50%;
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid;
+}
+.dropdown {
+  position: fixed;
+  top: 0;
+  height: 60vh;
+  width: 100%;
+  background-color: white;
+  transition: height 1s ease;
+}
+
+.dropdown-close {
+  position: fixed;
+  top: 0;
+  height: 0vh;
+  background-color: white;
+  transition: height 1s ease;
+}
+
+@media (max-width: 500px) {
+  header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
